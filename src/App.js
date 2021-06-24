@@ -5,11 +5,13 @@ import SkillPage from './pages/skillPage/index';
 import ServicesPage from './pages/servicesPage/index';
 import PortfolioPage from './pages/portfolioPage';
 import ContactPage from './pages/contactPage/index';
+import Navigator from './components/navigator/index';
 
 function App() {
   return (
     <div className="App">
-      My Portfolio
+
+      <Navigator />
       <HomePage />
 
       <AboutPage/>
