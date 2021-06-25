@@ -12,7 +12,7 @@ function App() {
     <div className="App">
 
       <Navigator />
-      <HomePage />
+      {/* <HomePage />
 
       <AboutPage/>
 
@@ -22,7 +22,7 @@ function App() {
 
       <PortfolioPage />
 
-      <ContactPage />
+      <ContactPage /> */}
     </div>
   );
 }
