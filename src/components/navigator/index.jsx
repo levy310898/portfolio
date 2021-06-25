@@ -17,7 +17,7 @@ export default class Navigator extends Component {
                 <nav className = "nav container">
                     <a href = "#top" className = "nav__logo">LeVy</a>
 
-                    <div className={classNames('nav__menu',{['show-menu']:this.state.isShowMenu})}>
+                    <div className={classNames('nav__menu',{'show-menu':this.state.isShowMenu})}>
                         <ul className = "nav__list grid">
                             <li className = "nav__item">
                                 <a href="#home" className = "nav__link" onClick = {this.handleDisplayMenu}><i className="fas fa-home nav__icon"></i> Home</a>

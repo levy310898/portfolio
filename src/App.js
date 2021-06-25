@@ -12,17 +12,18 @@ function App() {
     <div className="App">
 
       <Navigator />
-      {/* <HomePage />
+      
+      <HomePage />
 
-      <AboutPage/>
+      {/* <AboutPage/> */}
 
-      <SkillPage/>
+      {/* <SkillPage/> */}
 
-      <ServicesPage />
+      {/* <ServicesPage /> */}
 
-      <PortfolioPage />
+      {/* <PortfolioPage /> */}
 
-      <ContactPage /> */}
+      {/* <ContactPage /> */}
     </div>
   );
 }
