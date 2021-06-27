@@ -4,18 +4,14 @@ export const personalLink = {
     linkedin:'https://www.linkedin.com/',
 }
 
-export const icon = [
-    {
-        name:'facebook',
-        icon:'fab fa-facebook',
-    },
-    {
-        name:'github',
-        icon:'fab fa-github',
-    },
-    {
-        name:'linkedin',
-        icon:'fab fa-linkedin-in',
-    }
-]
-
+export const icon = {
+    facebook:'fab fa-facebook',
+    github:'fab fa-github',
+    linkedin:'fab fa-linkedin-in',
+    home:'fas fa-home',
+    about:'fas fa-user',
+    skills:'fas fa-check-square',
+    services:'fas fa-briefcase',
+    portfolio:'far fa-image',
+    contact:'fas fa-paper-plane',
+}
