@@ -15,7 +15,7 @@ function App() {
       
       <HomePage />
 
-      {/* <AboutPage/> */}
+      <AboutPage/>
 
       {/* <SkillPage/> */}
 

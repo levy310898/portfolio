@@ -13,5 +13,6 @@ export const icon = {
     skills:'fas fa-check-square',
     services:'fas fa-briefcase',
     portfolio:'far fa-image',
-    contact:'fas fa-paper-plane',
+    contact: 'fas fa-paper-plane',
+    arrowDown:'fas fa-arrow-down',
 }
