@@ -15,4 +15,5 @@ export const icon = {
     portfolio:'far fa-image',
     contact: 'fas fa-paper-plane',
     arrowDown:'fas fa-arrow-down',
+    downloadFile:'fas fa-file-download',
 }

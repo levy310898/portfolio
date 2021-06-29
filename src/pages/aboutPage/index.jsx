@@ -1,5 +1,8 @@
 import React from 'react'
 import './aboutPage.css';
+import {icon} from '../../constant/data';
+
+const classNames = require('classnames');
 
 export default function index() {
   return (
@@ -8,7 +11,7 @@ export default function index() {
       <span className="section__subtitle">My introduction</span>
 
       <div className="about__container container grid">
-        <img src="" alt="" className="about__img" />
+        <img src={`${process.env.PUBLIC_URL}/img/aboutPic.png`} alt="About me" className="about__img" />
 
         <div className="about__data">
           <p className="about__description">
@@ -31,6 +34,12 @@ export default function index() {
               <span className="about__info-name">Completed <br />Projects</span>
             </div>
           </div>
+        </div>
+
+        <div className="about__buttons">
+          <a download = "" href={`${process.env.PUBLIC_URL}/CV.pdf`} className="button button--flex">
+            Download CV <i className = {classNames(icon.downloadFile,['button__icon'])}></i>
+          </a>
         </div>
       </div>
     </div>
