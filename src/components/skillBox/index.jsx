@@ -10,6 +10,12 @@ export default class index extends Component {
     isClose: false,
   }
 
+  componentDidMount(){
+    const listBoxHeight = document.getElementById('listBox').offsetHeight;
+    console.log('height = ',listBoxHeight);
+    this.setState({listBoxHeight});
+  }
+
   renderSkillBar = skills => skills.map((item, index) =>
     <div className="skills__data" key = {index}>
     <div className="skills__titles">
@@ -30,12 +36,12 @@ export default class index extends Component {
             <div className="skills__header">
               <i className = {classNames(iconHeader,['skills__icon'])}></i>
               <div>
-                <h1 className="skills__title">{name }</h1>
-                <span className="skills__subtitle">about {year} {year>1?'years':'year'}</span>
+                <h1 className="skills__title">{name } <span className="skills__subtitle">about {year} {year>1?'years':'year'}</span></h1>
               </div>
               <i className = {classNames(icon.showDown,['skills__arrow'])} onClick = {()=>{this.setState({isClose:!this.state.isClose})}}></i>
             </div>
-            <div className="skills__list-box">
+            
+            <div className="skills__list-box" id = 'listBox' style = {{height:this.state.isClose?'0px':this.state.listBoxHeight?`${this.state.listBoxHeight}px`:'100%'}}>
               <div className="skills__list grid">
                 {this.renderSkillBar(skills)}
               </div>

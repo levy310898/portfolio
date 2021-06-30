@@ -3,18 +3,8 @@ import { Carousel } from 'antd';
 import { icon,portfolio } from '../../constant/data';
 import './portfolioPage.css';
 const classNames = require('classnames');
-const contentStyle = {
-  height: '160px',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
-};
-class index extends Component {
 
-  onChange = (a, b, c)=> {
-    console.log(a, b, c);
-  }
+class index extends Component {
 
   renderPortfolio = portfolio=>{
     return portfolio.map((item,index)=>
@@ -25,7 +15,7 @@ class index extends Component {
         <div className="portfolio__data">
           <div className="portfolio__title">{item.name}</div>
           <div className="portfolio__description">
-            {item.description && item.description!='' ? item.description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nostrum eius odit aperiam modi, iusto quibusdam perspiciatis. Sint, accusamus delectus!'}
+            {item.description && item.description!=='' ? item.description:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nostrum eius odit aperiam modi, iusto quibusdam perspiciatis. Sint, accusamus delectus!'}
             </div>
           <div className = 'portfolio__button-box'>
           <a href="#portfolio" className="button button--flex button--small">
@@ -47,7 +37,7 @@ class index extends Component {
 
         
         <div className="portfolio__container container">
-        <Carousel afterChange={this.onChange} dotPosition='top'>
+        <Carousel>
           {this.renderPortfolio(portfolio)}
         </Carousel>
 

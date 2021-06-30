@@ -40,9 +40,10 @@
     --mb-3:3rem;
 
     /* Z-INDEX */
-    --z-tooltop:10;
+    --z-tooltip:10;
     --z-fixed:20;
     --z-modal:30;
+
 }
 
 .grid{
