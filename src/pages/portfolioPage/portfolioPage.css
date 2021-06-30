@@ -1,0 +1,12 @@
+.portfolio__container{
+    overflow: initial;
+}
+
+.portfolio__content{
+    pading: 0 1.5rem;
+}
+
+.portfolio__img{
+    width:100%;
+    height:350px;
+}

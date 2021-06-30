@@ -1,4 +1,5 @@
 @import './constant/root.css';
+@import 'antd/dist/antd.css';
 
 /* FOR BIG DEVICES */
 @media screen and (min-width:968px) {

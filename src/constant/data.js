@@ -42,3 +42,21 @@ export const skills = {
         },
     ]
 }
+
+export const portfolio = [
+    {
+        name:"project 1",
+        img:'img/portfolio-1.jpg',
+        description:'',
+    },
+    {
+        name:"project 2",
+        img:'img/portfolio-2.jpg',
+        description:'',
+    },
+    {
+        name:"project 3",
+        img:'img/portfolio-3.jpg',
+        description:'',
+    }
+]
