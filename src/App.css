@@ -52,20 +52,20 @@ img{
     padding: 2rem 0 4rem;
 }
 
+
 .section__title{
+    text-align: center;
     font-size:  var(--h1-font-size);
 }
 
 .section__subtitle{
     display: block;
+    text-align: center;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
 }
 
-.section__title
-.section__subtitle{
-    text-align: center;
-}
+
 
 .container{
     max-width: 768px;

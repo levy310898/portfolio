@@ -15,5 +15,29 @@ export const icon = {
     portfolio:'far fa-image',
     contact: 'fas fa-paper-plane',
     arrowDown:'fas fa-arrow-down',
-    downloadFile:'fas fa-file-download',
+    downloadFile: 'fas fa-file-download',
+    showDown: 'fas fa-chevron-down',
+    code:'fas fa-code',
+}
+
+
+export const skills = {
+    frontend: [
+        {
+        name: 'html',
+        percent:80
+        },
+        {
+            name: 'CSS',
+            percent: 70
+        },
+        {
+            name: 'javascript',
+            percent: 60
+        },
+        {
+            name: 'ReactJs',
+            percent: 60
+        },
+    ]
 }

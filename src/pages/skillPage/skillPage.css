@@ -1,0 +1,4 @@
+@import '../../constant/root.css'; 
+.skills__container{
+  row-gap:0;
+}

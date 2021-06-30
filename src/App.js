@@ -17,7 +17,7 @@ function App() {
 
       <AboutPage/>
 
-      {/* <SkillPage/> */}
+      <SkillPage/>
 
       {/* <ServicesPage /> */}
 
