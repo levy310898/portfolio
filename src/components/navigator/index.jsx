@@ -28,7 +28,6 @@ export default class Navigator extends Component {
                             {this.renderMenuItem('home','home','home')}
                             {this.renderMenuItem('about','about','about')}
                             {this.renderMenuItem('skills','skills','skills')}
-                            {this.renderMenuItem('services','services','services')}
                             {this.renderMenuItem('portfolio','portfolio','portfolio')}
                             {this.renderMenuItem('contact','contact me','contact')}
                         </ul>

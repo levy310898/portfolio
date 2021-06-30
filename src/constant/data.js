@@ -17,7 +17,8 @@ export const icon = {
     arrowDown:'fas fa-arrow-down',
     downloadFile: 'fas fa-file-download',
     showDown: 'fas fa-chevron-down',
-    code:'fas fa-code',
+    code: 'fas fa-code',
+    arrowRight:'fas fa-arrow-right',
 }
 
 

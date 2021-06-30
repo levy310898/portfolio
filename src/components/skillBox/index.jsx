@@ -31,7 +31,7 @@ export default class index extends Component {
               <i className = {classNames(iconHeader,['skills__icon'])}></i>
               <div>
                 <h1 className="skills__title">{name }</h1>
-                <span className="skills__subtitle">about {year} years</span>
+                <span className="skills__subtitle">about {year} {year>1?'years':'year'}</span>
               </div>
               <i className = {classNames(icon.showDown,['skills__arrow'])} onClick = {()=>{this.setState({isClose:!this.state.isClose})}}></i>
             </div>
