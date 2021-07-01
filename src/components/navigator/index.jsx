@@ -7,7 +7,24 @@ var classNames = require('classnames');
 
 export default class Navigator extends Component {
     state = {
-        isShowMenu:false,
+        isShowMenu: false,
+        isScrollDown: false,
+    }
+
+    componentDidMount = () => {
+        window.addEventListener('scroll', this.handleScroll)
+    }
+
+    handleScroll = () => {
+        if (window.scrollY >= 120) {
+            this.setState({ isScrollDown: true });
+        } else {
+            this.setState({ isScrollDown: false });
+        }
+    }
+
+    componentWillUnmount = () => {
+        window.removeEventListener('scroll', this.handleScroll);
     }
     
     handleDisplayMenu = ()=>{
@@ -21,7 +38,7 @@ export default class Navigator extends Component {
     </li>
     render() {
         return (
-            <header className = "header" id = "header">
+            <header className = {classNames('header',{['header--scroll']:this.state.isScrollDown})} id = "header">
                 <nav className = "nav container">
                     <a href = "#top" className = "nav__logo">LeVy</a>
 

@@ -43,7 +43,7 @@ class index extends Component {
 
               <div className="contact__content">
                 <label htmlFor="formArea" className="contact__label">Message</label>
-                <textarea name="" id="" cols="0" rows="5" className = 'contact__input' id = 'formArea'></textarea>
+                <textarea name="" cols="0" rows="5" className = 'contact__input' id = 'formArea' />
               </div>
               <div>
                 <button className="button button--flex">Send Message

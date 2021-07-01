@@ -9,6 +9,10 @@
     background-color: var(--body-color);
 }
 
+.header--scroll{
+    box-shadow: 0 -1px 5px rgba(0,0,0,.2);
+}
+
 .nav{
     max-width: 968px;
     height: var(--header-height);
@@ -47,7 +51,7 @@ list-style: none
         left:0;
         width: 100%;
         background-color: var(--body-color);
-        padding:2rem 1.5rem 4rem;
+        padding:2rem 1.5rem;
         box-shadow: 0 1px 5px rgba(0,0,0,.2);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .5s;
