@@ -1,5 +1,9 @@
 @import '../../constant/root.css';
 
+.portfolio{
+    padding-bottom:4rem;
+}
+
 .portfolio__container{
     overflow: initial;
     position: relative;
