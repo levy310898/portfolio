@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './navigator.css';
-import{icon} from '../../constant/data';
+import { icon } from '../../constant/data';
+import { Link } from 'react-scroll';
 
 var classNames = require('classnames');
 
@@ -14,7 +15,9 @@ export default class Navigator extends Component {
     }
 
     renderMenuItem = (name,title,href)=> <li className = "nav__item">
-        <a href={`#${href}`} className = "nav__link" onClick = {this.handleDisplayMenu}><i className={classNames(icon[name],'nav__icon')}></i> {title}</a>
+        {/* <a href={`#${href}`} className = "nav__link" onClick = {this.handleDisplayMenu}><i className={classNames(icon[name],'nav__icon')}></i> {title}</a> */}
+
+        <Link activeClass="nav__active" className="nav__link" to={href} spy={true} offset={-30} smooth={true} duration={300} delay = {0}><i className={classNames(icon[name], 'nav__icon')}></i>{title }</Link>
     </li>
     render() {
         return (

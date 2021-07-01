@@ -5,6 +5,7 @@ import SkillPage from './pages/skillPage/index';
 import PortfolioPage from './pages/portfolioPage';
 import ContactPage from './pages/contactPage/index';
 import Navigator from './components/navigator/index';
+import Footer from './pages/footer/index';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
       <PortfolioPage />
 
       <ContactPage />
+
+      <Footer />
     </div>
   );
 }

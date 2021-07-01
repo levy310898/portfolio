@@ -95,3 +95,7 @@ list-style: none
 .show-menu{
     bottom:0;
 }
+
+.nav__active{
+    color:var(--hover-color);
+}

@@ -18,7 +18,7 @@ class index extends Component {
   }
   render() {
     return (
-      <div className = 'section contact'>
+      <div className = 'section contact' id = 'contact'>
         <h2 className="section__title">Contact me</h2>
         <span className="section__subtitle">Get in touch</span>
 
@@ -32,23 +32,23 @@ class index extends Component {
           <form action="" className="contact__form grid">
             <div className="contact__inputs grid">
               <div className="contact__content">
-                <label htmlFor="" className="contact__label">Name</label>
-                <input type="text" className="contact__input" />
+                <label htmlFor="formName" className="contact__label">Name</label>
+                <input type="text" className="contact__input" id = 'formName' />
               </div>
 
               <div className="contact__content">
-                <label htmlFor="" className="contact__label">Email</label>
-                <input type="text" className="contact__input" />
+                <label htmlFor="formEmail" className="contact__label">Email</label>
+                <input type="text" className="contact__input" id = 'formEmail'/>
               </div>
 
               <div className="contact__content">
-                <label htmlFor="" className="contact__label">Message</label>
-                <textarea name="" id="" cols="30" rows="10" className = 'contact__input'></textarea>
+                <label htmlFor="formArea" className="contact__label">Message</label>
+                <textarea name="" id="" cols="0" rows="5" className = 'contact__input' id = 'formArea'></textarea>
               </div>
               <div>
-                <a href="#contact" className="button button--flex">Send Message
+                <button className="button button--flex">Send Message
                 <i className = {classNames(icon.contact,['button__icon'])}></i>
-                </a>
+                </button>
               </div>
             </div>
           </form>

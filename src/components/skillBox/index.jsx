@@ -12,7 +12,10 @@ export default class index extends Component {
 
   componentDidMount() {
     
-    //for calculate height
+    //for calculate height of skillBox for better animation slide.
+    // i dont know why but if we use 100% and 0px for height transform we will fuck up.
+    // the animation won't smooth as we expect. 
+    // have to calculation height then set it for skills box
     const listBoxHeight = document.getElementById('listBox').offsetHeight;
     this.setState({listBoxHeight});
   }
