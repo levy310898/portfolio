@@ -1,7 +1,10 @@
-export const personalLink = {
+export const personalInfo = {
     facebook:"https://www.facebook.com/profile.php?id=100039094991713",
     github:'https://github.com/levy310898',
-    linkedin:'https://www.linkedin.com/',
+    linkedin: 'https://www.linkedin.com/',
+    phone: '0832202178',
+    email: 'levy310898@gmail.com',
+    location:'TPHCM',
 }
 
 export const icon = {
@@ -18,27 +21,30 @@ export const icon = {
     downloadFile: 'fas fa-file-download',
     showDown: 'fas fa-chevron-down',
     code: 'fas fa-code',
-    arrowRight:'fas fa-arrow-right',
+    arrowRight: 'fas fa-arrow-right',
+    phone: 'fas fa-phone',
+    email: 'fas fa-envelope',
+    location:'fas fa-map-marker-alt',
 }
 
 
 export const skills = {
     frontend: [
         {
-        name: 'html',
-        percent:80
+            name: 'html',
+            percent:60
         },
         {
             name: 'CSS',
-            percent: 70
+            percent: 50
         },
         {
             name: 'javascript',
-            percent: 60
+            percent: 50
         },
         {
             name: 'ReactJs',
-            percent: 60
+            percent: 50
         },
     ]
 }

@@ -1,11 +1,11 @@
 import React from 'react';
-import {personalLink,icon} from '../../constant/data.js';
+import {personalInfo,icon} from '../../constant/data.js';
 import './homePage.css';
 
 const classNames = require('classnames');
 export default function index() {
 
-  const renderLink = name=><a target = '_blank' rel = "noreferrer" href = {personalLink[name]} className = "home__social-icon">
+  const renderLink = name=><a target = '_blank' rel = "noreferrer" href = {personalInfo[name]} className = "home__social-icon">
     <i className = {icon[name]}></i>
   </a>
   return (

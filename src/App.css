@@ -33,6 +33,10 @@ body{
     color: var(--text-color);
 }
 
+.App{
+    padding-bottom: 2rem;
+}
+
 h1,h2,h3,h4{
     color:var(--title-color);
     font-weight: var(--font-semi-bold);

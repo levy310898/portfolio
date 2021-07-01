@@ -1,9 +1,5 @@
 @import '../../constant/root.css';
 
-.portfolio{
-    padding-bottom:4rem;
-}
-
 .portfolio__container{
     overflow: initial;
     position: relative;
@@ -57,7 +53,7 @@
      margin:0 -10px;
  } 
  .portfolio .ant-carousel .slick-dots-bottom{
-    bottom:-50px;
+    bottom:8px;
 }
 .portfolio .ant-carousel .slick-dots li{
     width:12px;

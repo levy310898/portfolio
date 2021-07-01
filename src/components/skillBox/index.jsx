@@ -10,9 +10,10 @@ export default class index extends Component {
     isClose: false,
   }
 
-  componentDidMount(){
+  componentDidMount() {
+    
+    //for calculate height
     const listBoxHeight = document.getElementById('listBox').offsetHeight;
-    console.log('height = ',listBoxHeight);
     this.setState({listBoxHeight});
   }
 

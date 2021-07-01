@@ -29,6 +29,7 @@ class index extends Component {
     </div>
     )
   }
+  
   render() {
     return (
       <div className = 'portfolio section' id = "portfolio">
@@ -37,9 +38,13 @@ class index extends Component {
 
         
         <div className="portfolio__container container">
-        <Carousel>
+          <Carousel ref={c => (this.slider = c)}>
           {this.renderPortfolio(portfolio)}
-        </Carousel>
+          </Carousel>
+          
+          <div className="slideButton">
+
+          </div>
 
         </div>
       </div>
