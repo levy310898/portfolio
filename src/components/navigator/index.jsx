@@ -55,6 +55,7 @@ export default class Navigator extends Component {
                     </div>
 
                     <div className="nav__btns">
+                        <i className={classNames(icon.moon, 'change-theme')} />
                         <div className="nav__toggle" onClick = {this.handleDisplayMenu}>
                         <i class="fas fa-bars"></i>
                         </div>

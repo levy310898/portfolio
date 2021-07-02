@@ -38,6 +38,7 @@
 .portfolio__title{
     font-size:var(--h2-font-size);
     margin-bottom:var(--mb-0-5);
+    color:var(--title-color);
 }
 
 .portfolio__description{
@@ -46,6 +47,7 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
     overflow: hidden;
+    color:var(--text-color);
 }
  /* -----------------------custom antd design------------------- */
 

@@ -24,9 +24,10 @@ export const icon = {
     arrowRight: 'fas fa-arrow-right',
     phone: 'fas fa-phone',
     email: 'fas fa-envelope',
-    location:'fas fa-map-marker-alt',
+    location: 'fas fa-map-marker-alt',
+    moon: 'fas fa-moon',
+    sun:'far fa-sun'
 }
-
 
 export const skills = {
     frontend: [
