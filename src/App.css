@@ -1,5 +1,6 @@
 @import './constant/root.css';
 @import 'antd/dist/antd.css';
+@import './constant/flickity.css';
 
 /* FOR BIG DEVICES */
 @media screen and (min-width:968px) {
@@ -32,6 +33,7 @@ html{
     background-color: var(--body-color);
     color: var(--text-color);
     padding-bottom: 2rem;
+    transition: all .3s linear;
 }
 
 h1,h2,h3,h4{

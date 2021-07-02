@@ -42,6 +42,7 @@
 
     /* Z-INDEX */
     --z-tooltip:10;
+    --z-carousel:15;
     --z-fixed:20;
     --z-modal:30;
 

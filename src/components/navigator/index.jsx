@@ -2,17 +2,20 @@ import React, { Component } from 'react'
 import './navigator.css';
 import { icon } from '../../constant/data';
 import { Link } from 'react-scroll';
-
+import { connect } from 'react-redux';
+import { changeTheme} from '../../redux/actions/actionTheme';
 var classNames = require('classnames');
 
-export default class Navigator extends Component {
+class Navigator extends Component {
     state = {
         isShowMenu: false,
         isScrollDown: false,
     }
 
     componentDidMount = () => {
+        // set event scroll get shadow box for nav-bar
         window.addEventListener('scroll', this.handleScroll)
+
     }
 
     handleScroll = () => {
@@ -55,7 +58,10 @@ export default class Navigator extends Component {
                     </div>
 
                     <div className="nav__btns">
-                        <i className={classNames(icon.moon, 'change-theme')} />
+                        <i
+                            className={classNames({ [`${icon.moon}`]: !this.props.darkTheme }, { [`${icon.sun}`]: this.props.darkTheme }, 'change-theme')}
+                            onClick={this.props.changeTheme} 
+                            />
                         <div className="nav__toggle" onClick = {this.handleDisplayMenu}>
                         <i class="fas fa-bars"></i>
                         </div>
@@ -65,3 +71,14 @@ export default class Navigator extends Component {
         )
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        darkTheme: state.darkTheme
+    }
+}
+
+const mapDispatchToProps = {
+    changeTheme,
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Navigator);

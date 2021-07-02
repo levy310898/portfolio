@@ -7,7 +7,7 @@ const classNames = require('classnames');
 export default class index extends Component {
   renderLinkIcon = (personal,iconName) => {
     return (
-      <a href={personalInfo[personal]} target = '_blank' className="footer__social">
+      <a href={personalInfo[personal]} target='_blank' rel="noreferrer" className="footer__social">
         <i className= {classNames(icon[iconName])}></i>
       </a>
     )

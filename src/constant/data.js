@@ -26,7 +26,7 @@ export const icon = {
     email: 'fas fa-envelope',
     location: 'fas fa-map-marker-alt',
     moon: 'fas fa-moon',
-    sun:'far fa-sun'
+    sun:'fas fa-sun'
 }
 
 export const skills = {

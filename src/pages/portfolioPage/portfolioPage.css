@@ -1,31 +1,14 @@
 @import '../../constant/root.css';
 
-.portfolio__container{
+.portfolio__container.container{
     overflow: initial;
     position: relative;
-}
-
-.portfolio__container::before,
-.portfolio__container::after{
-    content:'';
-    position: absolute;
-    height:100%;
-    width:20px;
-    background-color:var(--body-color);
-    z-index: var(--z-fixed);
-}
-
-.portfolio__container::before{
-    left:-20px;
-}
-
-.portfolio__container::after{
-    right:-20px;
-    top:0;
+    margin-left:0;
+    margin-right: 0;
 }
 
 .portfolio__content{
-    padding: 0 10px;
+    padding:0 20px;
 }
 
 .portfolio__img{
@@ -55,7 +38,7 @@
      margin:0 -10px;
  } 
  .portfolio .ant-carousel .slick-dots-bottom{
-    bottom:8px;
+    bottom:-40px;
 }
 .portfolio .ant-carousel .slick-dots li{
     width:12px;
@@ -69,4 +52,24 @@
     color:red !important;
     height: 100%;
     width: 100%;
+}
+
+.portfolio .ant-carousel .slick-dots li.slick-active button{
+    background:var(--hover-color-dark);
+}
+
+.dark-theme .portfolio .ant-carousel .slick-dots li.slick-active button{
+    background:#fff !important;
+}
+
+
+
+/* ------------------custon flickity */
+
+.flickity-prev-next-button.flickity-button{
+    background: var(--hover-color);
+}
+.flickity-prev-next-button.flickity-button:hover,
+.flickity-prev-next-button.flickity-button:focus{
+    background: var(--hover-color);
 }

@@ -9,10 +9,12 @@
   font-weight: var(--font-medium);
   outline: none;
   border:none;
+  transition: .3s;
 }
 
 .button:hover{
   background-color: var(--hover-color-dark);
+  color:#fff;
 }
 
 .button__icon{
