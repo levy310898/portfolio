@@ -73,3 +73,13 @@
 .flickity-prev-next-button.flickity-button:focus{
     background: var(--hover-color);
 }
+
+.portfolio .flickity-page-dots .dot{
+    background: var(--hover-color);
+    opacity: .4;
+    transition: .3s linear;
+}
+
+.portfolio .flickity-page-dots .dot.is-selected{
+    transform: scale(1.3);
+}

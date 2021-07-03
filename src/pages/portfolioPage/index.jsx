@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Carousel } from 'antd';
 import { icon,portfolio } from '../../constant/data';
 import './portfolioPage.css';
 import  Flickity  from 'react-flickity-component';
@@ -53,10 +52,6 @@ class index extends Component {
 
         
         <div className="container portfolio__container">
-          {/* <Carousel {...settings}>
-          {this.renderPortfolio(portfolio)}
-          </Carousel> */}
-
           <Flickity
             className={'carousel'} // default ''
             elementType={'div'} // default 'div'
