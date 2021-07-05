@@ -34,13 +34,14 @@ export default function index() {
               <span className="about__info-name">Completed <br />Projects</span>
             </div>
           </div>
+          <div className="about__buttons">
+            <a download="" href={`${process.env.PUBLIC_URL}/CV.pdf`} className="button button--flex">
+              Download CV <i className={classNames(icon.downloadFile, ['button__icon'])}></i>
+            </a>
+          </div>
         </div>
 
-        <div className="about__buttons">
-          <a download = "" href={`${process.env.PUBLIC_URL}/CV.pdf`} className="button button--flex">
-            Download CV <i className = {classNames(icon.downloadFile,['button__icon'])}></i>
-          </a>
-        </div>
+        
       </div>
     </div>
   )

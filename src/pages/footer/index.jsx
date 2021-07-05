@@ -39,6 +39,8 @@ export default class index extends Component {
               {this.renderLinkIcon('github','github')}
               {this.renderLinkIcon('linkedin','linkedin')}
             </div>
+
+            <div></div>
           </div>
         </div>
       </div>

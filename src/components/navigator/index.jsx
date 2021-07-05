@@ -37,12 +37,12 @@ class Navigator extends Component {
     renderMenuItem = (name,title,href)=> <li className = "nav__item">
         {/* <a href={`#${href}`} className = "nav__link" onClick = {this.handleDisplayMenu}><i className={classNames(icon[name],'nav__icon')}></i> {title}</a> */}
 
-        <Link activeClass="nav__active" className="nav__link" to={href} spy={true} offset={-30} smooth={true} duration={300} delay = {0}><i className={classNames(icon[name], 'nav__icon')}></i>{title }</Link>
+        <Link activeClass="nav__active" className="nav__link" to={href} spy={true} offset={-80} smooth={true} duration={300} delay = {0}><i className={classNames(icon[name], 'nav__icon')}></i>{title }</Link>
     </li>
     render() {
         return (
             <header className = {classNames('header',{['header--scroll']:this.state.isScrollDown})} id = "header">
-                <nav className = "nav container">
+                <nav className = "nav">
                     <a href = "#top" className = "nav__logo">LeVy</a>
 
                     <div className={classNames('nav__menu',{'show-menu':this.state.isShowMenu})}>

@@ -10,9 +10,11 @@ class index extends Component {
   renderPortfolio = portfolio=>{
     return portfolio.map((item,index)=>
     <div key = {index} style = {{width:'90%'}} className = 'portfolio__carousel'>
-      <div className="portfolio__content grid">
-        <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.name} className="portfolio__img" />
-
+        <div className="portfolio__content grid">
+          <div className="portfolio__img-box">
+            <img src={`${process.env.PUBLIC_URL}/${item.img}`} alt={item.name} className="portfolio__img" />
+          </div>
+        
         <div className="portfolio__data">
           <div className="portfolio__title">{item.name}</div>
           <div className="portfolio__description">
@@ -32,10 +34,6 @@ class index extends Component {
   }
   
   render() {
-    const settings = {
-      arrows:true
-    };
-
     const flickityOptions = {
       //initialIndex: 1,
       // cellSelector: '.sliderBoxes',

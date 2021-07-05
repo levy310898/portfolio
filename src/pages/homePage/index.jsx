@@ -38,26 +38,26 @@ export default function index() {
           </svg>
           </div>
 
-          
+          <div className="home__data">
+            <div className="home__title">Hi, I'am Lê Hồ Vỹ</div>
+            <div className="home__subtitle"> Frontend developer</div>
+            <p className="home__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur consectetur aspernatur officia eos? Enim iste dolorem quia odio ut pariatur.
+            </p>
+            <a href="#contact" className="button button--flex">
+              Contact me <i className={classNames(icon.contact, ['button__icon'])}></i>
+            </a>
+          </div>
         </div>
       
-        <div className="home__data">
-          <div className="home__title">Hi, I'am Lê Hồ Vỹ</div>
-          <div className="home__subtitle"> Frontend developer</div>
-          <p className="home__description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur consectetur aspernatur officia eos? Enim iste dolorem quia odio ut pariatur.
-          </p>
-          <a href="#contact" className="button button--flex">
-            Contact me <i className={classNames(icon.contact,['button__icon'])}></i>
-          </a>
-        </div>
+        
 
-        <div className="home__scroll">
+        {/* <div className="home__scroll">
           <a href="#about" className="home__scroll-button button--flex">
             <span className="home__scroll-name">Scroll down</span>
             <i class={classNames(icon.arrowDown, ['home__scroll-arrow'])}></i>
           </a>
-        </div>
+        </div> */}
       </div>
 
       
